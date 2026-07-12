@@ -6,4 +6,4 @@ Coursework and tasks from the ITIDA–NTI Full Stack Web Development (PHP) summe
 
 Practicing PHP fundamentals: arrays, string functions, and basic calculations.
 
-![Day 1 Output](Day1/output.png)
+![Day 1 Output](Day1/output.jpeg)
