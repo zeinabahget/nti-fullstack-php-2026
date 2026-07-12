@@ -11,7 +11,7 @@ echo "==================== Mini Blog Preview ====================" . "<br><br>";
 
 // ============================
 // Task 1: cleanText Function
-// بتستخدم trim وبترجع النص بعد إزالة المسافات
+// Uses trim and returns the text after removing extra spaces
 // ============================
 function cleanText($text) {
     return trim($text);
@@ -19,7 +19,7 @@ function cleanText($text) {
 
 // ============================
 // Task 2: Format Author Name
-// trim + strtolower + ucwords (أول حرف كل كلمة capital)
+// trim + strtolower + ucwords (capitalize the first letter of each word)
 // ============================
 function formatAuthorName($name) {
     $name = cleanText($name);
@@ -30,7 +30,7 @@ function formatAuthorName($name) {
 
 // ============================
 // Task 3: Format Title
-// trim + لو أطول من 35 حرف اقطعه بـ substr وضيف "..."
+// trim + if the title is longer than 35 chars, cut it with substr and add "..."
 // ============================
 function formatTitle($title, $maxLength) {
     $title = cleanText($title);
@@ -44,7 +44,7 @@ function formatTitle($title, $maxLength) {
 
 // ============================
 // Task 4: Search In Content
-// بتدور على كلمة معينة جوه المحتوى باستخدام strpos
+// Searches for a specific word inside the content using strpos
 // ============================
 function searchInContent($content, $word) {
     if (strpos($content, $word) !== false) {
@@ -56,7 +56,7 @@ function searchInContent($content, $word) {
 
 // ============================
 // Task 5: Replace Word In Content
-// بتستبدل كلمة بكلمة تانية باستخدام str_replace
+// Replaces one word with another using str_replace
 // ============================
 function replaceWordInContent($content, $search, $replace) {
     return str_replace($search, $replace, $content);
@@ -64,7 +64,7 @@ function replaceWordInContent($content, $search, $replace) {
 
 // ============================
 // Task 6: Make Slug
-// strtolower + str_replace للمسافات بـ "-"
+// strtolower + str_replace spaces with "-"
 // ============================
 function makeSlug($title) {
     $title = cleanText($title);
@@ -74,11 +74,11 @@ function makeSlug($title) {
 }
 
 // ============================
-// تنفيذ التاسكات وعرض النتيجة (بنستخدم نفس الـ functions فوق، من غير ما نكرر أي كود)
+// Run the tasks and display the result (reusing the functions above, no repeated code)
 // ============================
 $cleanTitle   = formatTitle($postTitle, 35);
 $cleanAuthor  = formatAuthorName($authorName);
-$shortContent = formatTitle($postContent, 60); // نفس function القص بتاعت العنوان استخدمناها تاني للمحتوى
+$shortContent = formatTitle($postContent, 60); // reused the same title-truncating function for the content too
 $slug         = makeSlug($postTitle);
 
 echo $cleanTitle . "<br><br>";
