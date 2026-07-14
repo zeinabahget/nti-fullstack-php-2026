@@ -43,11 +43,5 @@ Building a personal profile page using HTML with a blue color palette, featuring
 - Tables for layout (no CSS)
 - Blue color scheme (#e8f4f8, #d4e6f1, #1a5276, #2c3e50, #2471a3)
 
----
-
-## Day 2 — (Coming Soon)
-
----
-
 ## License
 © Copyrights are reserved to NTI.
