@@ -1,0 +1,15 @@
+.box3 {
+    height: 150px;
+    width: 250px;
+    background-color: #C9B8E8;
+    margin: 10px;
+    border-radius: 40px;
+}
+
+.box4 {
+    height: 150px;
+    width: 250px;
+    background-color: #E8B8C9;
+    margin: 10px;
+    border-radius: 65px;
+}

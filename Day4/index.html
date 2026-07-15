@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+
+    <!-- Second Way: External CSS (Section 4) -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        /* ===== Section 1: Font Classes ===== */
+        .abc {
+            color: red;
+            font-size: 30px;
+            font-family: Arial;
+        }
+
+        .test {
+            color: blue;
+        }
+
+        #a1 {
+            color: green;
+        }
+
+        /* ===== Section 3: Products Flex Layout ===== */
+        .parent {
+            display: flex;
+        }
+
+        .product1,
+        .product2,
+        .product3 {
+            border: 3px solid #b40f0f;
+            margin-left: 5px;
+        }
+
+        /* ===== Section 4: First Way - Internal CSS ===== */
+        .box1 {
+            height: 150px;
+            width: 250px;
+            background-color: #A8D8C9;
+            margin: 10px;
+            /* border-radius: 10px; */
+        }
+
+        .box2 {
+            height: 150px;
+            width: 250px;
+            background-color: #B5C7E8;
+            margin: 10px;
+            border-radius: 100px;
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- Section 1: Font Classes            -->
+    <h2>Section 1: Font Classes</h2>
+
+    <font class="abc">Hello From NTI !</font> <br>
+    <font class="abc test">Hello From NTI !</font> <br>
+    <font class="abc" id="a1">Hello From NTI !</font> <br>
+    <font class="abc test">Hello From NTI !</font> <br>
+    <font class="abc">Hello From NTI !</font> <br>
+
+    <hr><br>
+
+    
+    <!-- Section 2: Table                   -->
+    <h2>Section 2: Table</h2>
+
+    <table border="5" width="300" cellpadding="20" align="center">
+        <thead>
+            <tr bgcolor="#B5D8C8">
+                <th colspan="3">FullName</th>
+                <th>age</th>
+                <th>address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr bgcolor="#F7E6D3">
+                <td>Zeina</td>
+                <td>Mohamed</td>
+                <td>Bahgat</td>
+                <td>21</td>
+                <td>Maadi, Cairo</td>
+            </tr>
+            <tr bgcolor="#D6E4F0">
+                <td>Yassmin</td>
+                <td>Ahmed</td>
+                <td>Hassan</td>
+                <td>21</td>
+                <td>Sheikh Zayed</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><hr><br>
+
+    
+    <!-- Section 3: Products                -->
+   
+    <h2>Section 3: Products</h2>
+
+    <img src="https://m.media-amazon.com/images/I/41HDTPF2gDL.AC_SX250.jpg" />
+
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+
+    <!-- Inline -->
+    <span>Hello World</span>
+    <b>Hello World</b>
+    <i>Hello World</i>
+    <u>Hello World</u>
+
+    <br><br><hr><br>
+
+    <div class="parent">
+
+        <div class="product1">
+            <img src="https://m.media-amazon.com/images/I/41HDTPF2gDL.AC_SX250.jpg" />
+            <h6>Samsung</h6>
+            <p>Samsung Galaxy Tab Tablet ...</p>
+            <span>EGP 22,200<sup></sup></span>
+            <del>EGP 22,933 (11% off)</del>
+            <p>20% discount with AAIB cards</p>
+        </div>
+
+        <div class="product2">
+            <img src="https://m.media-amazon.com/images/I/41HDTPF2gDL.AC_SX250.jpg" />
+            <h6>Samsung</h6>
+            <p>Samsung Galaxy Tab Tablet ...</p>
+            <span>EGP 22,200<sup></sup></span>
+            <del>EGP 22,933 (11% off)</del>
+        </div>
+
+        <div class="product3">
+            <img src="https://m.media-amazon.com/images/I/416nAWhGqwL.AC_SX250.jpg" />
+            <h6>Samsung</h6>
+            <p>Samsung Galaxy Tab Tablet ...</p>
+            <span>EGP 40,999<sup></sup></span>
+            <del>EGP 22,933 (17% off)</del>
+            <p>28% discount with AAIB cards</p>
+        </div>
+
+    </div>
+
+    <br><br><hr><br>
+
+    <!-- Section 4: 3 Ways to Add CSS       -->
+    <h2>Section 4: 3 Ways to Add CSS</h2>
+
+    <h3>First Way: Internal CSS</h3>
+    <div class="box-container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <h3>Second Way: External CSS</h3>
+    <div class="box-container">
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+
+    <h3>Third Way: Inline CSS</h3>
+    <div class="box-container">
+        <div style="height:150px; width:250px; background-color:#E8C9E0; margin:10px; border-radius:10px;"></div>
+        <div style="height:150px; width:250px; background-color:#F0DDC8; margin:10px; border-radius:1px;"></div>
+    </div>
+
+</body>
+</html>
