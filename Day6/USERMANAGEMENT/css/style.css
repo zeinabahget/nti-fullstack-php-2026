@@ -1,0 +1,50 @@
+
+
+header {
+    background-color: #1690a8;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+ul li {
+    margin-right: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #2c3e5e;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #34495e;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+}
+
+.form-container input {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    padding: 8px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f7f7eb;
+    font-family: tahoma;
+}
